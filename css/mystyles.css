@@ -1,0 +1,57 @@
+
+.container{
+	margin-top:50px;
+}
+
+
+.text{
+	position:absolute;
+	color:aliceblue;
+	font-size:14em;
+	padding-top:10%;
+}
+p{
+	font-family: 'Flavors', cursive;;
+	font-size:3em;
+	color:grey;
+	padding-top:25%;
+}
+
+.one{
+    height:250px;
+    width:250px;
+    background-color:#ffcccc;
+	margin-top:5%;
+}
+
+.two{
+    height:150px;
+    width:150px;
+    background-color:#f2f2f2;
+	margin-top:25%;
+	margin-left:25%;
+}
+
+.three{
+    height:170px;
+    width:170px;
+    background-color: #ffd9b3;
+	margin-left:30%;
+}
+
+.four{
+	height:200px;
+	width:200px;
+	background-color:#ccffcc;
+	margin-top:27%;
+	margin-left:50%;
+}
+
+.text{
+	position:absolute;
+}
+.one, .two, .three, .four{
+	border-radius:50%;
+	position:absolute;
+	text-align:center;
+}
