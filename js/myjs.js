@@ -2,8 +2,7 @@ $(document).ready(function () {
     
     var lat;
     var lon;
-    
-    var celsius;
+	 var celsius;
     var kelvin;
     var fahrenheit;
     var temperature;
@@ -17,12 +16,12 @@ $(document).ready(function () {
     var timotheap = "c0f280df6d294bf9852c9b9bc0594c68";
          
     
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            lat = position.coords.latitude;
-            lon = position.coords.longitude;
-        
-            var APPID = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + timotheap;
+	
+	$.getJSON("http://ip-api.com/json", function(info){
+		lat = info.lat;
+		lon = info.lon;
+		
+		 var APPID = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + timotheap;
             
     
             $.getJSON(APPID, function (data) {
@@ -56,10 +55,16 @@ $(document).ready(function () {
                 }
                 });
              
-                                    });
+                                    
 
 
-                                });
-                            };
+                               
+                            });
+	});
+   
+    
+    
+        
+           
 
 });
